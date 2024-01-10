@@ -1,0 +1,450 @@
+
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+
+---
+<div class="background-image">
+    <div class="overlay"></div>
+    <p class="centered-text">Make a Better World</p>
+</div>
+
+
+
+<style>
+
+
+/* Media query for phones in landscape */
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'holiday';
+    src: url('../fonts/holiday.otf') ;
+    
+    }
+
+
+    .background-image {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('../src/images/skateBoardingGuy.png');
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+        position: absolute; /* Position it over the background */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.15); /* Semi-transparent black */
+        z-index: 1; /* Below the text */
+    }
+
+.centered-text {
+    color: white;
+    font-size: 5.5em; /* or any size you prefer */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;  
+    font-family: 'MiloSerifPro-Bold';
+    
+    
+  
+}
+    
+}
+
+/* General media query for landscape orientation */
+@media only screen and (orientation: landscape) {
+    @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'holiday';
+    src: url('../fonts/holiday.otf') ;
+    
+    }
+
+
+    .background-image {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('../src/images/skateBoardingGuy.png');
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+        position: absolute; /* Position it over the background */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.15); /* Semi-transparent black */
+        z-index: 1; /* Below the text */
+    }
+
+.centered-text {
+    color: white;
+    font-size: 5.5em; /* or any size you prefer */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;  
+    font-family: 'MiloSerifPro-Bold';
+    
+    
+  
+}
+    
+}
+
+
+/* Styles specifically for phones */
+@media (max-width: 600px) {
+    @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'holiday';
+    src: url('../fonts/holiday.otf') ;
+    
+    }
+
+
+    .background-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: url('../src/images/skateBoardingGuy.png');
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+        position: absolute; /* Position it over the background */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.15); /* Semi-transparent black */
+        z-index: 1; /* Below the text */
+    }
+
+.centered-text {
+    color: white;
+    font-size: 2em; /* or any size you prefer */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;  
+    font-family: 'MiloSerifPro-Bold';
+    
+    
+  
+}
+   
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'holiday';
+    src: url('../fonts/holiday.otf') ;
+    
+    }
+
+
+    .background-image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('../src/images/skateBoardingGuy.png');
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+        position: absolute; /* Position it over the background */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.15); /* Semi-transparent black */
+        z-index: 1; /* Below the text */
+    }
+
+.centered-text {
+    color: white;
+    font-size: 4.5em; /* or any size you prefer */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;  
+    font-family: 'MiloSerifPro-Bold';
+    
+    
+  
+}
+     
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'holiday';
+    src: url('../fonts/holiday.otf') ;
+    
+    }
+
+
+    .background-image {
+    position: relative;
+    width: 100%;
+    height: 752px;
+    background-image: url('../src/images/skateBoardingGuy.png');
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+        position: absolute; /* Position it over the background */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.15); /* Semi-transparent black */
+        z-index: 1; /* Below the text */
+    }
+
+.centered-text {
+    color: white;
+    font-size: 5.5em; /* or any size you prefer */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;  
+    font-family: 'MiloSerifPro-Bold';
+    
+    
+  
+}
+  
+   
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'holiday';
+    src: url('../fonts/holiday.otf') ;
+    
+    }
+
+
+    .background-image {
+    position: relative;
+    width: 100%;
+    height: 752px;
+    background-image: url('../src/images/skateBoardingGuy.png');
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+        position: absolute; /* Position it over the background */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.15); /* Semi-transparent black */
+        z-index: 1; /* Below the text */
+    }
+
+.centered-text {
+    color: white;
+    font-size: 5.5em; /* or any size you prefer */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;  
+    font-family: 'MiloSerifPro-Bold';
+    
+    
+  
+}
+
+
+   
+}
+
+
+
+</style>

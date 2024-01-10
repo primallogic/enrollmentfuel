@@ -1,0 +1,58 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+<div class="container">
+    <div class="box" id="box1">
+        Make a Better World
+    </div>
+    
+</div>
+
+
+
+<style>
+
+
+/* Media query for phones in landscape */
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    
+}
+
+/* General media query for landscape orientation */
+@media only screen and (orientation: landscape) {
+    
+}
+
+
+/* Styles specifically for phones */
+@media (max-width: 600px) {
+   
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+     
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+   
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+   
+}
+
+
+
+</style>

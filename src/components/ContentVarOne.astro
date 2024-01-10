@@ -1,0 +1,417 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+<div class="container">
+   <div class="box" id="box1">
+      
+   </div>
+   <div class="box" id="box2">
+       <p class="boldText">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Vestibulum sit amet auctor <br> quam. Vivamus at tristique elit.</p>
+       <br>
+       <p class="regularText">Pellentesque a ipsum quis purus bibendum <br> pretium non eget eros. Nullam vel congue lorem. <br> Donec molestie nulla vitae est interdum.</p>
+   </div>
+</div>
+
+
+
+<style>
+
+
+/* Media query for phones in landscape */
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+
+
+}
+
+/* General media query for landscape orientation */
+@media only screen and (orientation: landscape) {
+ 
+   @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+
+
+    .container {
+    display: flex;
+    height:200px;
+}
+
+.box {
+   flex: 1;
+}
+
+
+#box1 {
+   
+   position: relative;
+   background-image: url('../src/images/girlsTalking.png');
+   background-size:cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#box2 {
+   
+   font-size:1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#box2 p {
+   margin: 0 2% 0 0;
+}
+
+.boldText {
+   font-family: 'MiloSerifPro-Bold';
+}
+
+.regularText {
+   font-family: 'MiloSerifPro-Text_0';
+}
+
+}
+
+
+
+
+
+
+
+
+/* Styles specifically for phones */
+@media (max-width: 600px) {
+  
+   @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+
+
+    .container {
+    display: flex;
+    height:150px;
+}
+
+.box {
+   flex: 1;
+}
+
+
+#box1 {
+   
+   position: relative;
+   background-image: url('../src/images/girlsTalking.png');
+   background-size:cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#box2 {
+   
+   font-size:0.6em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#box2 p {
+   margin: 0 6% 0 0;
+}
+
+.boldText {
+   font-family: 'MiloSerifPro-Bold';
+}
+
+.regularText {
+   font-family: 'MiloSerifPro-Text_0';
+}
+
+
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+   
+
+   @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+
+
+    .container {
+    display: flex;
+    height:250px;
+}
+
+.box {
+   flex: 1;
+}
+
+
+#box1 {
+   
+   position: relative;
+   background-image: url('../src/images/girlsTalking.png');
+   background-size:cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#box2 {
+   
+   font-size:1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#box2 p {
+   margin: 0 10% 0 0;
+}
+
+.boldText {
+   font-family: 'MiloSerifPro-Bold';
+}
+
+.regularText {
+   font-family: 'MiloSerifPro-Text_0';
+}
+ 
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+   
+   @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+
+
+    .container {
+    display: flex;
+    height:250px;
+}
+
+.box {
+   flex: 1;
+}
+
+
+#box1 {
+   
+   position: relative;
+   background-image: url('../src/images/girlsTalking.png');
+   background-size:cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#box2 {
+   
+   font-size:1.2em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#box2 p {
+   margin: 0 10% 0 0;
+}
+
+.boldText {
+   font-family: 'MiloSerifPro-Bold';
+}
+
+.regularText {
+   font-family: 'MiloSerifPro-Text_0';
+}
+
+   
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+   @font-face {
+    font-family: 'MiloPro-Bold';
+    src: url('../fonts/FontFont - MiloPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloPro-Text_0';
+    src: url('../fonts/FontFont - MiloPro-Text_0.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Bold';
+    src: url('../fonts/FontFont - MiloSerifPro-Bold.otf') ;
+    
+    }
+
+    @font-face {
+    font-family: 'MiloSerifPro-Text';
+    src: url('../fonts/FontFont - MiloSerifPro-Text.otf') ;
+    
+    }
+
+
+
+    .container {
+    display: flex;
+    height:450px;
+}
+
+.box {
+   flex: 1;
+}
+
+
+#box1 {
+   
+   position: relative;
+   background-image: url('../src/images/girlsTalking.png');
+   background-size:cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#box2 {
+   
+   font-size:1.5em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#box2 p {
+   margin: 0 20% 0 0;
+}
+
+.boldText {
+   font-family: 'MiloSerifPro-Bold';
+}
+
+.regularText {
+   font-family: 'MiloSerifPro-Text_0';
+}
+
+   
+}
+
+
+
+</style>
