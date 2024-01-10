@@ -1,11 +1,12 @@
 ---
-
+import { Image } from 'astro:assets';
+import enrollmentFuelLogo from '../images/enrollmentFuelLogo.png';
 ---
 <div class="container">
     <div class="box" id="box1">
         <!-- Logo goes here -->
-        <!-- <img src="../src/images/enrollmentFuelLogo.png" alt="EnrollmentFuel Logo"> -->
-        <img src="public/enrollmentFuelLogo.png" alt="EnrollmentFuel Logo">
+        <img src= {enrollmentFuelLogo.src} alt="EnrollmentFuel Logo">
+        
     </div>
     <div class="box" id="box2">
         
